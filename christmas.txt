@@ -1,0 +1,88 @@
+if numTiers = 1 then trunk = 1 
+
+ *
+***
+ *   rows=2 tab=1  stars=4
+ 
+  *
+ ***
+*****
+  *   rows=3 tab=2 stars=9 remainder=0
+    
+   *
+  ***
+ *****
+*******
+   *     rows=4 tab=3 stars=16 remainder=1
+
+    *
+   ***
+  *****
+ *******
+*********
+    *     rows=5	tab=4 stars=25 remainder=2
+   
+   
+   
+   *       3 spaces
+  ***
+ *****
+  ***
+ *****
+*******
+   *    rows=6 tab=3 stars = 24 remainder=0
+   
+    *
+   ***
+  *****
+   ***
+  *****
+ *******
+*********
+    *    rows=7 tab=4 stars = 33 remainder=1
+	   
+	   
+     *
+    ***
+   *****
+  *******
+   *****
+  *******
+ *********
+***********
+     *    rows=8 tab=4 stars = 48 remainder=2
+	 
+       *            5 spaces
+      ***
+     *****
+      ***
+     *****   rows=12 tiers=4
+	*******
+     *****
+    *******
+   *********
+    *******
+   *********
+  ***********
+       *  
+	 
+3,3    ~2 tiers    6 rows
+3,4
+4,4
+3,3,3    ~3 tiers   9 rows
+3,3,4
+3,4,4
+3,3,3,3   ~4 tiers    12 rows
+3,3,3,4
+3,3,4,4
+3,3,3,3,3    ~5 tiers     15 rows
+3,3,3,3,4
+3,3,3,4,4
+3,3,3,3,3,3   ~6 tiers      18 rows
+
+Observations:
+
+If remainder of dividing rows by 3 is 0, then all tiers have same number of rows
+If remainder is 1 then last tier has 4 rows
+If remainder is 2 then last 2 tiers have 4 rows
+
